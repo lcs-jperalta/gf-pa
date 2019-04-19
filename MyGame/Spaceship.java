@@ -14,6 +14,41 @@ public class Spaceship extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        // Check if the up key is being pressed
+        if (Greenfoot.isKeyDown("up"))
+        {
+            // Make the spaceship face upwards
+            setRotation(270);
+            // Move the spaceship up
+            setLocation(getX(), getY() - 2);
+
+        }
+
+        if (Greenfoot.isKeyDown("down"))
+        {
+            // Make the spaceship face upwards
+            setRotation(270);
+            // Move the spaceship up
+            setLocation(getX(), getY() + 2);
+
+        }
+
+        if (Greenfoot.isKeyDown("left"))
+        {
+            // Make the spaceship face upwards
+            setRotation(270);
+            // Move the spaceship up
+            setLocation(getX() - 2, getY());
+
+        }
+
+        if (Greenfoot.isKeyDown("right"))
+        {
+            // Make the spaceship face upwards
+            setRotation(270);
+            // Move the spaceship up
+            setLocation(getX() + 2, getY());
+
+        }
     }    
 }
